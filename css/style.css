@@ -1,0 +1,33 @@
+*{ margin:0 auto; padding:0;font-family: 'Rubik', sans-serif;}
+header{ width:100%; height:100vh;background-image:linear-gradient(to left, #fff 85%, #c3f5ff 20%);}
+.nav-section{ width:100%; height:20vh; display:flex; justify-content:space-around; align-items: center;
+background-image:linear-gradient(to top, #fff 80%, #c3f5ff 20%);}
+.logo{ width:40%; color:#fff; background-image:linear-gradient(#8d98e3 40%, #854fee 60%); padding-left:100px;
+ box-sizing:border-box;}
+.logo h1{ text-transform:uppercase; font-size:25px; animation: aagepiche 2s linear infinite; animation-direction:alternate;}
+@keyframes aagepiche{
+	from{ padding-left:40px;}to {padding-right:40px;}
+	}
+nav{ width:60%;display:flex; justify-content:space-around;}
+nav a{ text-decoration:none; color:#000; text-transform:uppercase; font-weight:900;font-size:20px; position:relative;}
+nav a:first-child{ color:#06F;}
+nav a:before{ content:""; position:absolute; top:110%; left:0; width:0%; height:2px; border-bottom:2px solid #06F; 
+transition:all 0.4s linear}
+nav a:hover:before{ width:100%;}
+main{height:80vh;display:flex; justify-content:space-around; align-items:center;}
+main .right-side{border-radius:30% 70% 74% 26% / 30% 40% 60% 70% ; background:#c3f5ff; width:500px; height:500px;}
+main .right-side img{max-width:400px;; height:auto;margin-left:60px; margin-top:70px;}
+.left-side{color:#000; text-transform:uppercase;}
+.left-side h3{ margin-bottom:20px; font-size:45px; position:relative}
+.left-side h3:after{ content:""; width:450px; height:3px; position:absolute; top:50%; left:23.5%; background-color:#000;}
+.left-side h1 { margin-top:20px; font-size:65px; margin-bottom:25px;}
+.left-side h2{ margin-bottom:30px; font-weight:500; word-break:4px;}
+.left-side .btn1{ text-decoration:none; border:double 2px transparent;text-align:center; padding:12px 25px;
+margin-right:50px;font-size:15px; color:#fff; border-radius:5px; display:inline-block; 
+background-image:linear-gradient(to right, #4458dc 10%, #854fee 100%), radial-gradient(circle at top left,#4458dc,#854fee); 
+font-weight:bold; cursor:pointer;
+box-shadow:0 10px 30px rgba(118,85,225,0.3)}
+.left-side .btn1:hover{ border:2px solid #4485dc; color:#222;background-color:#fff;background-image:none; box-shadow:none;
+}.left-side .btn2{ text-decoration:none; border:2px solid #4485dc;text-align:center; padding:12px 25px;
+margin-right:50px;font-size:15px; color:#222; border-radius:5px; display:inline-block; 
+background-color:#fff; font-weight:bold; cursor:pointer;box-shadow:none;}
